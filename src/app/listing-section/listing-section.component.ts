@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface IDetailList {
+  position?: number
   firstname: string;
   confirmpassword: string;
   dob: Date;
@@ -9,8 +10,6 @@ export interface IDetailList {
   password: string;
 }
 
-const ELEMENT_DATA = [];
-
 @Component({
   selector: 'app-listing-section',
   templateUrl: './listing-section.component.html',
@@ -18,10 +17,8 @@ const ELEMENT_DATA = [];
 })
 export class ListingSectionComponent implements OnInit {
   displayedColumns: string[] = ['firstname', 'lastname', 'dob', 'gender', 'action'];
-  dataSource = ELEMENT_DATA;
-
+  dataSource: IDetailList;
   constructor() {
-
   }
 
   ngOnInit(): void {
