@@ -15,10 +15,10 @@ export interface IDetailList {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GlobalVow';
+  title = 'Assignment';
   defaultFormList: IDetailList[]  = [
     {position: 1, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc",gender:'M' },
-    {position: 2,firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc", gender:'F'},
+    {position: 2, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc", gender:'F'},
     {position: 3, firstname:"neha", lastname:"singh",dob: new Date(), password:"abc", confirmpassword:"abc", gender:'F'}
   ];
 
