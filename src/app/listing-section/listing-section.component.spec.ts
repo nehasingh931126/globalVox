@@ -23,12 +23,7 @@ describe('ListingSectionComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
-  it('should test the table ', () => {
+  it('should test the table data', () => {
     expect(component.dataSource[0]['firstname']).toBe('neha');
   });
-  
 });

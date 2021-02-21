@@ -17,9 +17,9 @@ export interface IDetailList {
 export class AppComponent {
   title = 'Assignment';
   defaultFormList: IDetailList[]  = [
-    {position: 1, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc",gender:'M' },
-    {position: 2, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc", gender:'F'},
-    {position: 3, firstname:"neha", lastname:"singh",dob: new Date(), password:"abc", confirmpassword:"abc", gender:'F'}
+    {position: 1, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc",gender:'Male' },
+    {position: 2, firstname:"neha", lastname:"singh", dob: new Date(), password:"abc", confirmpassword:"abc", gender:'Female'},
+    {position: 3, firstname:"neha", lastname:"singh",dob: new Date(), password:"abc", confirmpassword:"abc", gender:'Other'}
   ];
 
   constructor() {

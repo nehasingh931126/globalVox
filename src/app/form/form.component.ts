@@ -40,7 +40,7 @@ export class FormComponent implements OnInit {
           {validators: [Validators.required], updateOn: 'blur'}),
       }, {validator: this.checkPasswords}),
       dob: new FormControl(new Date()),
-      gender: new FormControl('', [Validators.required]),
+      gender: new FormControl('Male', [Validators.required]),
     } );
   }
 
