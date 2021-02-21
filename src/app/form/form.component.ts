@@ -5,7 +5,6 @@ import { FormBuilder, FormControl, FormGroup,
     ValidatorFn } from '@angular/forms';
 import { Router } from '@angular/router';
 export class CustomValidators {
-
     public static pattern(reg: RegExp) : ValidatorFn {
         return (control: AbstractControl): { [key: string]: any } => {
             var value = <string>control.value;
@@ -55,9 +54,9 @@ export class FormComponent implements OnInit {
   }
 
   public checkPasswords(group: FormGroup) { // here we have the 'passwords' group
-  const pass = group.get('password').value;
-  const confirmPass = group.get('confirmpassword').value;
-  return pass === confirmPass ? null : { notSame: true };
+    const pass = group.get('password').value;
+    const confirmPass = group.get('confirmpassword').value;
+    return pass === confirmPass ? null : { notSame: true };
   }
 
   public onCancel() {
